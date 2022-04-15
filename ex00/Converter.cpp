@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Converter.cpp                                     :+:      :+:    :+:   */
+/*   Converter.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kangkim <kangkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 13:17:54 by kangkim           #+#    #+#             */
-/*   Updated: 2022/04/13 13:31:06 by kangkim          ###   ########.fr       */
+/*   Updated: 2022/04/15 13:10:22 by kangkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void Converter::print_to_int(void) const {
 }
 
 void Converter::print_to_float(void) const {
-  double value = static_cast<float>(get_value());
+  float value = static_cast<float>(get_value());
 
   if (std::isnan(value) || std::isinf(value)) {
     std::cout << std::showpos;
